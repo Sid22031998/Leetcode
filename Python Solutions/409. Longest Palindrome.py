@@ -10,8 +10,10 @@ class Solution:
             if value%2==0:
                 ans+=value
             else:
+                # take only even count
                 ans+=value-1
                 flag=True
+        # take odd count of any one (odd occurring character)
         if flag:
             ans+=1
         return ans
